@@ -1,0 +1,157 @@
+/* 
+Portfolio Stylesheet
+Author: Jackelin Britton
+ChatGPT assisted in debugging & styling
+Last Updated: 9/21/2025
+*/
+
+/* 
+Portfolio Stylesheet
+Author: Jackelin Britton
+ChatGPT assisted in debugging & styling
+Last Updated: 9/21/2025
+*/
+
+/* ===== RESET & GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #444; /* Dark neutral background */
+  color: #fff;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  border-bottom: 3px solid #222;
+}
+.site-title {
+  margin: 0;
+  font-size: 2.2em;
+}
+nav {
+  margin-top: 10px;
+}
+nav .tab-btn {
+  background: #4cafef;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+nav .tab-btn:hover {
+  background: #2c8cc9;
+}
+
+/* ===== TAB CONTENT ===== */
+.tab-content {
+  display: none; /* Hidden until active */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+}
+.tab-content.active {
+  display: block; /* Only the active section shows */
+}
+
+/* ===== OBJECTIVES ===== */
+#objectives ol {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px;
+}
+#objectives li {
+  margin: 12px 0;
+}
+
+/* ===== PROJECTS GRID ===== */
+.projects-grid {
+  display: grid; /* Flexible responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual project card */
+.project-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: scale(1.03); /* Slight pop effect */
+}
+
+/* Consistent image size */
+.project-card img.project-img {
+  width: 100%;          /* Image takes full width of card */
+  height: 180px;        /* Fixed height for all previews */
+  object-fit: cover;    /* Crop image neatly to fill area */
+  border-radius: 8px;   /* Rounded edges */
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Project title */
+.project-card h3 {
+  margin: 10px 0 5px;
+  color: #f9d994;
+  font-size: 1.3em;
+}
+
+/* Project description */
+.project-card p {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-bottom: 15px;
+  min-height: 40px; /* Keeps cards aligned even with short text */
+}
+
+/* Project button */
+.project-card .main-btn {
+  background: #4cafef;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.project-card .main-btn:hover {
+  background: #2c8cc9;
+}
+
+/* ===== COMMUNITY COMMENTS ===== */
+.comment {
+  text-align: left;
+  margin: 8px auto;
+  max-width: 600px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95em;
+}
+.comment strong {
+  color: #f9d994;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background: #222;
+  font-size: 0.9em;
+  color: #bbb;
+}
