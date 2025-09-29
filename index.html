@@ -1,0 +1,193 @@
+<!--
+SIP411 - Boards Presentation
+Author: Jackelin Britton
+ChatGPT assisted only in debugging, structuring, and commenting code.
+Last Updated: 9/28/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+  <title>Jackelin Britton | SIP Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <!-- ===== HEADER WITH SITE TITLE AND NAVIGATION TABS ===== -->
+  <header>
+    <h1 class="site-title">Jackelin Britton — SIP Portfolio</h1>
+    <nav>
+      <button class="tab-btn" data-tab="objectives">Objectives</button>
+      <button class="tab-btn" data-tab="projects">Projects</button>
+      <button class="tab-btn" data-tab="community">Community</button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- === OBJECTIVES TAB === -->
+    <section id="objectives" class="tab-content active">
+      <h2>Program Objectives</h2>
+
+      <!-- Objective 1 -->
+      <h3>Objective 1 - Develop, analyze and integrate artificial intelligence applications and IoT systems.</h3>
+      <div class="objective-project">
+        <h4>Mystic Card Forge</h4>
+        <p>This project demonstrates integration of AI applications by combining a web interface, Firebase persistence, and the AI card generator, simulating workflows similar to IoT systems that manage data across devices.</p>
+      </div>
+      <div class="objective-project">
+        <h4>HyperStopwatch Mini</h4>
+        <p>This project applies AI to real-world productivity tracking by integrating baseline vs AI-assisted timing, showing how AI systems can be analyzed and integrated for performance improvements.</p>
+      </div>
+
+      <!-- Objective 2 -->
+      <h3>Objective 2 - Design and create natural language processing systems (NLP).</h3>
+      <div class="objective-project">
+        <h4>Bargenius</h4>
+        <p>This project processes live call transcripts and provides AI-driven coaching, demonstrating practical application of NLP techniques for real-time communication.</p>
+      </div>
+      <div class="objective-project">
+        <h4>FeedbackLens Mini</h4>
+        <p>This tool analyzes written feedback using AI sentiment and keyword extraction, showing design and creation of NLP-based systems for improving user experience.</p>
+      </div>
+
+      <!-- Objective 3 -->
+      <h3>Objective 3 - Design and create machine learning systems using best practices and patterns.</h3>
+      <div class="objective-project">
+        <h4>AI Music Generator</h4>
+        <p>By training models on Spanish pop/reggaeton datasets, this project applies machine learning patterns to generate new audio content, following best practices in preprocessing and evaluation.</p>
+      </div>
+      <div class="objective-project">
+        <h4>Movie Sorter</h4>
+        <p>This web app demonstrates fundamental ML concepts like sorting and data management, while adhering to best practices in user input validation and algorithm design.</p>
+      </div>
+
+      <!-- Objective 4 -->
+      <h3>Objective 4 - Innovate in deep learning by consuming big data with original algorithms.</h3>
+      <div class="objective-project">
+        <h4>Ritmo AI Studios</h4>
+        <p>Generates AI music across genres by consuming large datasets of audio and applying deep learning models, producing original reggaeton/pop tracks that highlight algorithmic innovation.</p>
+      </div>
+      <div class="objective-project">
+        <h4>Abstract Illusion Museum</h4>
+        <p>Uses deep learning tools to generate and curate large sets of AI-created abstract images, demonstrating innovation in creative algorithms that process big visual datasets.</p>
+      </div>
+
+      <!-- Objective 5 -->
+      <h3>Objective 5 - Demonstrate software development skills using multiple languages, environments, platforms, and source control.</h3>
+      <div class="objective-project">
+        <h4>Checkers Game</h4>
+        <p>Built in JavaScript, this project highlights programming fundamentals while reinforcing skills in logic, game loops, and browser environments.</p>
+      </div>
+      <div class="objective-project">
+        <h4>Mystic Card Forge</h4>
+        <p>Developed across multiple platforms (VS Code, GitHub Pages, Firebase), this project demonstrates cross-environment development and source control best practices.</p>
+      </div>
+
+      <!-- Objective 6 -->
+      <h3>Objective 6 - Describe, develop, analyze, and integrate data structures, databases, and database management systems.</h3>
+      <div class="objective-project">
+        <h4>Mystic Card Forge</h4>
+        <p>Card data and images are structured, stored, and retrieved with Firebase + localStorage, showing database integration and schema-like organization of user inputs.</p>
+      </div>
+      <div class="objective-project">
+        <h4>HyperStopwatch Mini</h4>
+        <p>Stores session data for analysis and comparison, demonstrating database management techniques and structured integration of performance results.</p>
+      </div>
+
+      <!-- Walkthrough video placeholder -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Boards Walkthrough" allowfullscreen></iframe>
+      </div>
+      <p class="note">Walkthrough video will be uploaded to YouTube and linked here.</p>
+    </section>
+
+    <!-- === PROJECTS TAB === -->
+    <section id="projects" class="tab-content">
+      <h2>Projects & Artifacts</h2>
+      <div class="projects-grid">
+
+        <!-- Mystic Card Forge -->
+        <div class="project-card">
+          <img src="images/Mystic-Card-Forge.png" alt="Mystic Card Forge preview" class="project-img">
+          <h3>Mystic Card Forge</h3>
+          <p>Interactive MTG card maker with AI card generator & community voting.</p>
+          <a href="https://jacks87.github.io/Mystic-Card-Forge/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+        <!-- HyperStopWatch Mini -->
+        <div class="project-card">
+          <img src="images/HyperStopWatch-Mini.png" alt="HyperStopWatch Mini preview" class="project-img">
+          <h3>HyperStopWatch Mini</h3>
+          <p>AI-powered stopwatch that measures productivity vs baseline.</p>
+          <a href="https://jacks87.github.io/HyperStopWatchMini/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+        <!-- FeedbackLens Mini -->
+        <div class="project-card">
+          <img src="images/FeedbackLens-Mini.png" alt="FeedbackLens Mini preview" class="project-img">
+          <h3>FeedbackLens Mini</h3>
+          <p>AI-driven tool for analyzing feedback and improving projects.</p>
+          <a href="https://jacks87.github.io/feedbacklens-mini/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+        <!-- AI Music Generator -->
+        <div class="project-card">
+          <img src="images/AI-Music-Generator.png" alt="AI Music Generator preview" class="project-img">
+          <h3>AI Music Generator</h3>
+          <p>Generates Spanish pop & reggaeton music using AI tools.</p>
+          <a href="https://jacks87.github.io/ai-music/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+        <!-- Movie Sorter -->
+        <div class="project-card">
+          <img src="images/Movie-Sorter.png" alt="Movie Sorter preview" class="project-img">
+          <h3>Movie Sorter</h3>
+          <p>Web app that lets users enter movie titles and sort them alphabetically.</p>
+          <a href="https://jacks87.github.io/movie-sorter/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+        <!-- Checkers Game -->
+        <div class="project-card">
+          <img src="images/Checkers-Game.png" alt="Checkers Game preview" class="project-img">
+          <h3>Checkers Game</h3>
+          <p>Classic checkers game built with JavaScript.</p>
+          <a href="https://jacks87.github.io/checkers-assignment/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+        <!-- Abstract Illusion Museum -->
+        <div class="project-card">
+          <img src="images/Abstract-Illusion-Museum.png" alt="Abstract Illusion Museum preview" class="project-img">
+          <h3>Abstract Illusion Museum</h3>
+          <p>Virtual museum of AI-generated abstract illusions.</p>
+          <a href="https://jacks87.github.io/abstract-illusion-museum/" target="_blank" class="main-btn">View Project</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- === COMMUNITY TAB === -->
+    <section id="community" class="tab-content">
+      <h2>Community Interaction</h2>
+      <p class="feedback-note">Please share feedback on: 1) Appearance (design), 2) Organization (flow of info), and 3) Professionalism (how this portfolio would look to employers).</p>
+      
+      <!-- Comment form -->
+      <form id="comment-form">
+        <textarea id="comment-text" placeholder="Leave a comment..."></textarea>
+        <button type="submit" class="main-btn">Post Comment</button>
+      </form>
+      <!-- Where comments will appear -->
+      <div id="comments-container"></div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Jackelin Britton — Student Innovation Project Portfolio</p>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
