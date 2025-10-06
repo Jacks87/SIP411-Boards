@@ -98,6 +98,32 @@ nav .tab-btn:hover {
   border: none;
 }
 
+.objective-block {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;.objective-block {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px 0;
+  text-align: left;
+  min-height: 30vh; /* 30% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.objective-project p {
+  color: #ccc;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+  border-radius: 10px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+
 /* ===== PROJECTS GRID ===== */
 .projects-grid {
   display: grid;
