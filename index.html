@@ -1,195 +1,295 @@
 <!--
-SIP411 - Boards Presentation
+SIP411 - Boards Presentation (Objective Hub)
 Author: Jackelin Britton
-ChatGPT assisted only in debugging, structuring, and commenting code.
-Last Updated: 10/5/2025
+ChatGPT assisted in structure & debugging
+Last Updated: 10/10/2025
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"> <!-- Character encoding -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
-  <title>Jackelin Britton | SIP Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jackelin Britton | SIP411 Boards</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <!-- ===== HEADER WITH SITE TITLE AND NAVIGATION TABS ===== -->
-  <header>
-    <h1 class="site-title">Jackelin Britton — SIP Portfolio</h1>
-    <nav>
-      <button class="tab-btn" data-tab="objectives">Objectives</button>
-      <button class="tab-btn" data-tab="projects">Projects</button>
-      <button class="tab-btn" data-tab="community">Community</button>
-    </nav>
+
+  <!-- Global Header -->
+  <header class="global-header">
+    <div class="header-left">
+      <h1 class="site-title">Jackelin Britton — SIP411 Boards</h1>
+      <nav class="main-nav">
+        <button class="tab-btn" data-tab="objective-hub">Objectives Hub</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="community">Community</button>
+      </nav>
+    </div>
+    <div class="header-right">
+      <span class="uat-pill">UNIVERSITY OF ADVANCING TECHNOLOGY</span>
+    </div>
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
   <main>
-    <!-- === OBJECTIVES TAB === -->
-    <section id="objectives" class="tab-content active">
-      <h2>Program Objectives</h2>
 
-      <!-- Objective 1 -->
-      <h3>Objective 1 - Develop, analyze and integrate artificial intelligence, applications and IoT systems.</h3>
-      <div class="objective-project">
-        <h4>Mystic Card Forge</h4>
-        <p>This project demonstrates integration of AI applications by combining a web interface, Firebase persistence, and the AI Card generator simulating workflows similar to IoT systems that manage data across devices.</p>
-      </div>
-      <div class="objective-project">
-        <h4>HyprStopWatch Mini</h4>
-        <p>THis project applies AI to real-world productivity tracking by integrated baseline vs AI assisted timming, showing how AI systems can be analyzed and integrated for performance improvements.</p>
+    <!-- ===== OBJECTIVE HUB (LANDING) ===== -->
+    <section id="objective-hub" class="tab-content active">
+      <div class="hub-header">
+        <!-- Local nav (duplicates main for the mockup look) -->
+        <div class="hub-title">
+          <h3>UNIVERSITY OF ADVANCING TECHNOLOGY</h3>
+          <p>SIP411 – BOARDS PRESENTATION</p>
+          <h2>JACKELIN BRITTON</h2>
+        </div>
       </div>
 
-      <!-- Objective 2 -->
-      <h3>Objective 2 - Design and create natural language processing systems. (NLP).</h3>
-      <div class="objective-project">
-        <h4>FeedbackLens Mini</h4>
-        <p>This tool analyzes written feedback using AI sentiment and keyword extraction, showing design and creation of NLP based systems for improving user experience.</p>
-      </div>
-
-      <!-- Objective 3 -->
-      <h3>Objective 3 - Design and create machine learning systems using best practices and patterns.</h3>
-      <div class="objective-project">
-        <h4>AI Music Generator</h4>
-        <p>By training models on Spanish pop/reggaeton datasets, this project applies machine learning patterns to generate new audio content, following best practices in preprocessing and evaluation.</p>
-      </div>
-      <div class="objective-project">
-        <h4>Movie Sorter</h4>
-        <p>This tool demonstates fundamental ML concepts like sorting and data management, while adhering to best practices in user input validation and algorithm design.</p>
-      </div>
-
-      <!-- Objective 4 -->
-      <h3>Objective 4 - Innovate in deep learning by consuming big data with original algorithms</h3>
-      <div class="objective-project">
-        <h4>Ritmo AI Studios</h4>
-        <p>This tool generates AI music accross genres by consuming large datasets of audio and applying deep learning models, producing original reggaeton/pop tracks that highlight algorithmic innovation.</p>
-      </div>
-      <div class="objective-project">
-        <h4>Abstract Illusion Museum</h4>
-        <p>This project uses deep learning tools to generate and curate large sets of AI-created abstract images, demonstrating innovation in creative algorithms that process big visual datasets.</p>
-      </div>
-
-      <!-- Objective 5 -->
-      <h3>Objective 5 - Demonstrate software development skills using multiple languages, enviroments, platforms, and source control.</h3>
-      <div class="objective-project">
-        <h4>Checkers Game</h4>
-        <p>Built in JavaScript, this project highlights programming fundamentals while reinforcing skills in logic, game loops, and browser enviroments.</p>
-      </div>
-      <div class="objective-project">
-        <h4>Mystic Card Forge</h4>
-        <p>Developed accross multiple platforms (VS Code, GitHub Pages, Firebase) this project demonstrates cross-environment development and source control best practices.</p>
-      </div>
-
-      <!-- Objective 6 -->
-      <h3>Objective 6 - Describe, develop, analyze, and integrate data structures, databases, and database management systems.</h3>
-      <div class="objective-project">
-        <h4>Mystic Card Forge</h4>
-        <p>In this project, card data and images are structured, stored, and retrieved with Firebase + LocalStorage, showing database integration and schema like organization of user inputs.</p>
-      </div>
-      <div class="objective-project">
-        <h4>HyperStopWatch Mini</h4>
-        <p>This tool stores session data for analysis and comparison, demonstrating database management techniques and structured integration of performance results.</p>
-      </div>
-
-<!-- ====== BOARDS WALKTHROUGH VIDEO ====== -->
-<section id="video-walkthrough">
-  <h2>Boards Walkthrough Video</h2>
-
-  <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wVT5O-n1050?si=ccC0f5k5tvMw3qVf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-
-  <p class="note">🎓 SIP411 Boards Walkthrough — Presented by Jackelin Britton</p>
-</section>
-
-
-
-    <!-- === PROJECTS TAB === -->
-    <section id="projects" class="tab-content">
-      <h2>Projects & Artifacts</h2>
-      <div class="projects-grid">
-
-        <!-- Mystic Card Forge -->
-        <div class="project-card">
-          <img src="images/Mystic-Card-Forge.png" alt="Mystic Card Forge preview" class="project-img">
-          <h3>Mystic Card Forge</h3>
-          <p>Interactive MTG card maker with AI card generator & community voting.</p>
-          <a href="https://jacks87.github.io/Mystic-Card-Forge/" target="_blank" class="main-btn">View Project</a>
+      <div class="hub-layout">
+        <!-- Left objectives (1–3) -->
+        <div class="objectives-left">
+          <div class="objective-card" data-link="#projects/mystic">
+            <h4>OBJECTIVE 1</h4>
+            <p>Develop, analyze, and integrate AI & IoT systems.</p>
+          </div>
+          <div class="objective-card" data-link="#projects/feedback">
+            <h4>OBJECTIVE 2</h4>
+            <p>Design and create natural language processing systems.</p>
+          </div>
+          <div class="objective-card" data-link="#projects/movie">
+            <h4>OBJECTIVE 3</h4>
+            <p>Design and create machine learning systems using best practices.</p>
+          </div>
         </div>
 
-        <!-- HyperStopWatch Mini -->
-        <div class="project-card">
-          <img src="images/HyperStopWatch-Mini.png" alt="HyperStopWatch Mini preview" class="project-img">
-          <h3>HyperStopWatch Mini</h3>
-          <p>AI-powered stopwatch that measures productivity vs baseline.</p>
-          <a href="https://jacks87.github.io/HyperStopWatchMini/" target="_blank" class="main-btn">View Project</a>
+        <!-- Center video -->
+        <div class="video-center">
+          <iframe 
+            src="https://www.youtube.com/embed/wVT5O-n1050?si=ccC0f5k5tvMw3qVf"
+            title="SIP411 Boards Walkthrough"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
 
-        <!-- FeedbackLens Mini -->
-        <div class="project-card">
-          <img src="images/FeedbackLens-Mini.png" alt="FeedbackLens Mini preview" class="project-img">
-          <h3>FeedbackLens Mini</h3>
-          <p>AI-driven tool for analyzing feedback and improving projects.</p>
-          <a href="https://jacks87.github.io/feedbacklens-mini/" target="_blank" class="main-btn">View Project</a>
+        <!-- Right objectives (4–5) -->
+        <div class="objectives-right">
+          <div class="objective-card" data-link="#projects/abstract">
+            <h4>OBJECTIVE 4</h4>
+            <p>Innovate in deep learning by consuming big data with original algorithms.</p>
+          </div>
+          <div class="objective-card" data-link="#projects/checkers">
+            <h4>OBJECTIVE 5</h4>
+            <p>Demonstrate software development across multiple languages & platforms.</p>
+          </div>
         </div>
-
-        <!-- AI Music Generator -->
-        <div class="project-card">
-          <img src="images/AI-Music-Generator.png" alt="AI Music Generator preview" class="project-img">
-          <h3>AI Music Generator</h3>
-          <p>Generates Spanish pop & reggaeton music using AI tools.</p>
-          <a href="https://jacks87.github.io/ai-music/" target="_blank" class="main-btn">View Project</a>
-        </div>
-
-        <!-- Movie Sorter -->
-        <div class="project-card">
-          <img src="images/Movie-Sorter.png" alt="Movie Sorter preview" class="project-img">
-          <h3>Movie Sorter</h3>
-          <p>Web app that lets users enter movie titles and sort them alphabetically.</p>
-          <a href="https://jacks87.github.io/movie-sorter/" target="_blank" class="main-btn">View Project</a>
-        </div>
-
-        <!-- Checkers Game -->
-        <div class="project-card">
-          <img src="images/Checkers-Game.png" alt="Checkers Game preview" class="project-img">
-          <h3>Checkers Game</h3>
-          <p>Classic checkers game built with JavaScript.</p>
-          <a href="https://jacks87.github.io/checkers-assignment/" target="_blank" class="main-btn">View Project</a>
-        </div>
-
-        <!-- Abstract Illusion Museum -->
-        <div class="project-card">
-          <img src="images/Abstract-Illusion-Museum.png" alt="Abstract Illusion Museum preview" class="project-img">
-          <h3>Abstract Illusion Museum</h3>
-          <p>Virtual museum of AI-generated abstract illusions.</p>
-          <a href="https://jacks87.github.io/abstract-illusion-museum/" target="_blank" class="main-btn">View Project</a>
-        </div>
-
       </div>
     </section>
 
-    <!-- === COMMUNITY TAB === -->
+    <!-- ===== DETAILED OBJECTIVES PAGE ===== -->
+    <section id="objectives" class="tab-content">
+      <h2>Program Objectives — Evidence & Links</h2>
+
+      <!-- Objective 1 -->
+      <h3>Objective 1 — Develop, analyze and integrate AI applications and IoT systems.</h3>
+      <div class="objective-project">
+        <h4><a href="#projects/mystic">Mystic Card Forge</a></h4>
+        <p>Web app integrating generation workflow, browser storage, and deployment — mirrors distributed/IoT-style data flow (capture → process → persist → display).</p>
+      </div>
+      <div class="objective-project">
+        <h4><a href="#projects/hyper">HyperStopwatch Mini</a></h4>
+        <p>Timing & tracking utility with structured session data and analysis — shows integration of app logic, data storage, and UX loop.</p>
+      </div>
+
+      <!-- Objective 2 -->
+      <h3>Objective 2 — Design and create natural language processing (NLP) systems.</h3>
+      <div class="objective-project">
+        <h4><a href="#projects/feedback">FeedbackLens Mini</a></h4>
+        <p>Analyzes text feedback via sentiment/keywords — NLP pipeline design & evaluation with user-facing improvements.</p>
+      </div>
+      <div class="objective-project">
+        <h4><a href="#projects/mystic">Mystic Card Forge</a></h4>
+        <p>Text templating/prompt-style inputs and validation; demonstrates structured text artifact flows (NLP-adjacent).</p>
+      </div>
+
+      <!-- Objective 3 -->
+      <h3>Objective 3 — Design & create machine learning systems using best practices & patterns.</h3>
+      <div class="objective-project">
+        <h4><a href="#projects/movie">Movie Sorter</a></h4>
+        <p>Emphasizes input validation, separation of concerns, deterministic output (good ML scaffolding and hygiene).</p>
+      </div>
+      <div class="objective-project">
+        <h4><a href="#projects/feedback">FeedbackLens Mini</a></h4>
+        <p>Modular pipeline, metric-oriented thinking (accuracy/F1 mindset), and configurable processing reflect patterns.</p>
+      </div>
+
+      <!-- Objective 4 -->
+      <h3>Objective 4 — Innovate in deep learning by consuming big data with original algorithms.</h3>
+      <div class="objective-project">
+        <h4><a href="#projects/abstract">Abstract Illusion Museum</a></h4>
+        <p>Curates & presents large sets of AI-generated images; original curation heuristics and scalable gallery serving.</p>
+      </div>
+      <div class="objective-project">
+        <h4><a href="#projects/mystic">Mystic Card Forge</a></h4>
+        <p>Dataset handling & generation workflow; novel UI logic for generated content presentation.</p>
+      </div>
+
+      <!-- Objective 5 -->
+      <h3>Objective 5 — Software dev skills across multiple languages, environments, platforms & source control.</h3>
+      <div class="objective-project">
+        <h4><a href="#projects/checkers">Checkers Game</a></h4>
+        <p>JavaScript game demonstrating logic/state and browser platform specifics using GitHub for source control.</p>
+      </div>
+      <div class="objective-project">
+        <h4><a href="#projects/mystic">Mystic Card Forge</a></h4>
+        <p>VS Code + GitHub Pages; commits/branching; cross-env dev and deployment.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS (SHOWCASE) ===== -->
+    <section id="projects" class="tab-content">
+      <h2>Projects — Showcase</h2>
+
+      <!-- Project sub-tabs -->
+      <div class="project-tabs">
+        <button class="proj-tab-btn" data-proj="mystic">Mystic Card Forge</button>
+        <button class="proj-tab-btn" data-proj="hyper">HyperStopwatch Mini</button>
+        <button class="proj-tab-btn" data-proj="feedback">FeedbackLens Mini</button>
+        <button class="proj-tab-btn" data-proj="movie">Movie Sorter</button>
+        <button class="proj-tab-btn" data-proj="abstract">Abstract Illusion Museum</button>
+        <button class="proj-tab-btn" data-proj="checkers">Checkers Game</button>
+      </div>
+
+      <!-- Display case layout -->
+      <div id="proj-mystic" class="display-case active">
+        <div class="display-left">
+          <h3>Mystic Card Forge</h3>
+          <p class="desc">Interactive MTG-style card maker with generation workflow and community-ready features.</p>
+          <ul class="info">
+            <li><strong>Objective(s):</strong> 1, 2, 4, 5</li>
+            <li><strong>How it meets:</strong> Data persistence, generation pipeline, structured UI, GitHub Pages deployment.</li>
+            <li><strong>Links:</strong>
+              <a class="link" href="https://jacks87.github.io/Mystic-Card-Forge/" target="_blank">Live</a> ·
+              <a class="link" href="https://github.com/Jacks87/Mystic-Card-Forge" target="_blank">GitHub</a>
+            </li>
+            <li><strong>Software pictured:</strong> Running web app (create → render card).</li>
+          </ul>
+        </div>
+        <div class="display-right">
+          <img src="images/Mystic-Card-Forge.png" alt="Mystic Card Forge running screenshot"/>
+        </div>
+      </div>
+
+      <div id="proj-hyper" class="display-case">
+        <div class="display-left">
+          <h3>HyperStopwatch Mini</h3>
+          <p class="desc">Productivity stopwatch for baseline vs focused sessions; stores history.</p>
+          <ul class="info">
+            <li><strong>Objective(s):</strong> 1, 5</li>
+            <li><strong>How it meets:</strong> Session data structure & analysis; UI + storage integration; reproducible behavior.</li>
+            <li><strong>Links:</strong>
+              <a class="link" href="https://jacks87.github.io/HyperStopWatchMini/" target="_blank">Live</a> ·
+              <a class="link" href="https://github.com/Jacks87/HyperStopWatchMini" target="_blank">GitHub</a>
+            </li>
+            <li><strong>Software pictured:</strong> Session list and timing view.</li>
+          </ul>
+        </div>
+        <div class="display-right">
+          <img src="images/HyperStopWatch-Mini.png" alt="HyperStopwatch Mini running screenshot"/>
+        </div>
+      </div>
+
+      <div id="proj-feedback" class="display-case">
+        <div class="display-left">
+          <h3>FeedbackLens Mini</h3>
+          <p class="desc">NLP feedback analyzer (sentiment + keywords) to improve peer reviews and polish.</p>
+          <ul class="info">
+            <li><strong>Objective(s):</strong> 2, 3</li>
+            <li><strong>How it meets:</strong> NLP pipeline design & evaluation; modular architecture reflects ML best practices.</li>
+            <li><strong>Links:</strong>
+              <a class="link" href="https://jacks87.github.io/feedbacklens-mini/" target="_blank">Live</a> ·
+              <a class="link" href="https://github.com/Jacks87/feedbacklens-mini" target="_blank">GitHub</a>
+            </li>
+            <li><strong>Software pictured:</strong> Input → analysis view.</li>
+          </ul>
+        </div>
+        <div class="display-right">
+          <img src="images/FeedbackLens-Mini.png" alt="FeedbackLens Mini running screenshot"/>
+        </div>
+      </div>
+
+      <div id="proj-movie" class="display-case">
+        <div class="display-left">
+          <h3>Movie Sorter</h3>
+          <p class="desc">Collect titles and present a sorted list — clean data flow and validation.</p>
+          <ul class="info">
+            <li><strong>Objective(s):</strong> 3</li>
+            <li><strong>How it meets:</strong> Input → transform → output with deterministic logic and clear structure.</li>
+            <li><strong>Links:</strong>
+              <a class="link" href="https://jacks87.github.io/movie-sorter/" target="_blank">Live</a> ·
+              <a class="link" href="https://github.com/Jacks87/movie-sorter" target="_blank">GitHub</a>
+            </li>
+            <li><strong>Software pictured:</strong> Title input and sorted results.</li>
+          </ul>
+        </div>
+        <div class="display-right">
+          <img src="images/Movie-Sorter.png" alt="Movie Sorter running screenshot"/>
+        </div>
+      </div>
+
+      <div id="proj-abstract" class="display-case">
+        <div class="display-left">
+          <h3>Abstract Illusion Museum</h3>
+          <p class="desc">Virtual gallery of AI-generated illusions with curated presentation.</p>
+          <ul class="info">
+            <li><strong>Objective(s):</strong> 4</li>
+            <li><strong>How it meets:</strong> Handles large output sets; algorithmic curation; scalable gallery UI.</li>
+            <li><strong>Links:</strong>
+              <a class="link" href="https://jacks87.github.io/abstract-illusion-museum/" target="_blank">Live</a> ·
+              <a class="link" href="https://github.com/Jacks87/abstract-illusion-museum" target="_blank">GitHub</a>
+            </li>
+            <li><strong>Software pictured:</strong> Gallery grid and details.</li>
+          </ul>
+        </div>
+        <div class="display-right">
+          <img src="images/Abstract-Illusion-Museum.png" alt="Abstract Illusion Museum running screenshot"/>
+        </div>
+      </div>
+
+      <div id="proj-checkers" class="display-case">
+        <div class="display-left">
+          <h3>Checkers Game</h3>
+          <p class="desc">Classic checkers in JS with turn logic, valid moves, and board state.</p>
+          <ul class="info">
+            <li><strong>Objective(s):</strong> 5</li>
+            <li><strong>How it meets:</strong> Language fundamentals, browser specifics, GitHub workflow.</li>
+            <li><strong>Links:</strong>
+              <a class="link" href="https://jacks87.github.io/checkers-assignment/" target="_blank">Live</a> ·
+              <a class="link" href="https://github.com/Jacks87/checkers-assignment" target="_blank">GitHub</a>
+            </li>
+            <li><strong>Software pictured:</strong> Board, pieces, move interactions.</li>
+          </ul>
+        </div>
+        <div class="display-right">
+          <img src="images/Checkers-Game.png" alt="Checkers Game running screenshot"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMMUNITY ===== -->
     <section id="community" class="tab-content">
       <h2>Community Interaction</h2>
-      <p class="feedback-note">Please share feedback on: 1) Appearance (design), 2) Organization (flow of info), and 3) Professionalism (how this portfolio would look to employers).</p>
-      
-      <!-- Comment form -->
+      <p class="feedback-note">Please share feedback on: 1) Appearance, 2) Organization, 3) Professionalism.</p>
       <form id="comment-form">
         <textarea id="comment-text" placeholder="Leave a comment..."></textarea>
         <button type="submit" class="main-btn">Post Comment</button>
       </form>
-      <!-- Where comments will appear -->
       <div id="comments-container"></div>
     </section>
+
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 Jackelin Britton — Student Innovation Project Portfolio</p>
+    <p>&copy; 2025 Jackelin Britton — SIP411 Boards (AI)</p>
   </footer>
 
-  <!-- ===== SCRIPTS ===== -->
   <script src="script.js"></script>
 </body>
 </html>
