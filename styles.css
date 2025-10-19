@@ -157,3 +157,57 @@ footer{margin-top:20px; padding:15px; background:#0b0b0b; color:#aaa; font-size:
   .display-case.active{grid-template-columns:1fr}
   .display-right{min-height:260px}
 }
+
+/* =========================================================
+   APPENDED: A11y + QoL styles (ADD-ONLY, NO OVERRIDES)
+   ========================================================= */
+
+/* 1) Screen-reader-only utility for hidden headings (used in index.html) */
+.sr-only{
+  position:absolute !important;
+  width:1px; height:1px;
+  padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+/* 2) Focus rings for keyboard users on important interactive elements */
+.main-nav .tab-btn:focus-visible,
+.proj-tab-btn:focus-visible,
+.objective-card:focus-visible,
+.display-right img[role="button"]:focus-visible {
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+/* 3) ARIA-selected styling for project tabs (mirrors your .active look) */
+.proj-tab-btn[aria-selected="true"]{
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(76, 175, 239, 0.6);
+  transform: translateY(-2px);
+}
+
+/* 4) Optional style if "comment-card" ever appears (safe no-op otherwise) */
+.comment-card{
+  text-align:left; margin:8px auto; max-width:600px; background:rgba(255,255,255,.1);
+  padding:8px 12px; border-radius:8px; font-size:.95em;
+}
+.comment-card small{color:#aaa}
+
+/* 5) Gentle motion preferences: reduce transforms for users who prefer it */
+@media (prefers-reduced-motion: reduce){
+  .main-nav .tab-btn,
+  .objective-card,
+  .proj-tab-btn{
+    transition:none !important;
+    transform:none !important;
+  }
+}
+
+/* 6) Print-friendly pass for faculty reviewers */
+@media print{
+  body{background:#fff; color:#000}
+  .global-header, footer{border-color:#000}
+  .tab-content{background:#fff; color:#000; box-shadow:none}
+  .objective-card, .objective-project, .display-left, .display-right{box-shadow:none}
+  .display-right img{filter:none}
+}
